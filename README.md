@@ -6,7 +6,11 @@ Level: Intermediate
 
 ## What is it?
 
-tbd
+tbd - work in progress
+
+The project is hihgly inspired by `https://hackernoon.com/create-reuseable-validation-directive-in-angualr-2-dcb0b0df2ce8`
+
+ 
 
 ## Setup 
 
