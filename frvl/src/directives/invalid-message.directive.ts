@@ -1,5 +1,5 @@
 import {Directive, ElementRef, Input, OnDestroy, OnInit, Renderer2} from '@angular/core';
-import {AbstractControl, ControlContainer, FormGroupDirective} from '@angular/forms';
+import {AbstractControl, ControlContainer, FormGroup, FormGroupDirective} from '@angular/forms';
 import {Subscription} from 'rxjs/Subscription';
 
 @Directive({
@@ -54,7 +54,7 @@ export class InvalidMessageDirective implements OnInit, OnDestroy {
     return false;
   }
 
-  get form() { return this._fg.formDirective ? (this._fg.formDirective as FormGroupDirective).form : null; }
+  get form(): FormGroup { return this._fg.formDirective ? (this._fg.formDirective as FormGroupDirective).form : null; }
 
   ngOnDestroy(): void {
     this.controlSubscription.unsubscribe();
