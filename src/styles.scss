@@ -1,1 +1,12 @@
 @import 'variables';
+/*
+ * Font Awesome 4.x
+ */
+$fa-font-path: "~font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome";
+
+.form__validation-message--error {
+  background-color: red;
+  color: white;
+  padding: 3px 5px;
+}
