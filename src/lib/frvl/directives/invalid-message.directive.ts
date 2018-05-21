@@ -57,7 +57,9 @@ export class InvalidMessageDirective implements OnInit, OnDestroy {
   get form(): FormGroup { return this._fg.formDirective ? (this._fg.formDirective as FormGroupDirective).form : null; }
 
   ngOnDestroy(): void {
-    this.controlSubscription.unsubscribe();
+    if (this.controlSubscription !== undefined) {
+      this.controlSubscription.unsubscribe();
+    }
   }
 
 }

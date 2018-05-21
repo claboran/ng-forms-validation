@@ -36,7 +36,9 @@ export class InvaildTypeDirective implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    this.controlSubscription.unsubscribe();
+    if (this.controlSubscription !== undefined) {
+      this.controlSubscription.unsubscribe();
+    }
   }
 
 }
