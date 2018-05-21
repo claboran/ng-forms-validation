@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {FormValidationModule} from '../../frvl/src/form-validation.module';
+import {FormValidationModule} from '../lib/frvl/form-validation.module';
 
 
 @NgModule({

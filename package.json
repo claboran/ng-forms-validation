@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:lib": "rimraf dist && ng-packagr -p frvl/package.json"
+    "build:lib": "rimraf dist && ng-packagr -p src/lib/frvl/package.json"
   },
   "private": true,
   "dependencies": {
